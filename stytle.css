@@ -1,0 +1,90 @@
+:root {
+   --light-grey: hsl(0, 0%, 95%);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+}
+
+.cars > article {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 2rem 3rem;
+}
+
+.cars__sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.cars__suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cars__luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.cars__button {
+    background-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cars__button {
+    width: 50%;
+    text-align: center;
+}
+
+.cars__button a {
+    text-decoration: none;
+}
+.cars__button--sedan a{
+    color: hsl(31, 77%, 52%);
+}
+
+.cars__button--suvs a{
+    color: hsl(184, 100%, 22%);
+}
+
+.cars_button--luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.cars__button:hover{
+    background-color: transparent;
+}
+
+.cars__button:hover a {
+    color: var(--light-grey);
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--light-grey);
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .cars {
+        flex-direction: row;
+    }
+}
